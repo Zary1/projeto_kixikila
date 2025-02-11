@@ -1,0 +1,305 @@
+/* Geral */
+* {
+    font-family: "Merriweather";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /
+}
+
+main {
+    flex: 1; 
+}
+.mensagem_contacto{
+    font-size: 16px;
+    color: #6E8E59;
+    
+}
+.error_message{
+    color: rgb(133, 13, 13);
+    font-size: 16px;
+
+}
+.nome_admin{
+    font-size: 16px;
+    color: white;
+      
+}
+/* Header */
+header {
+    background-color:#6E8E59;
+
+    border-bottom: 1px solid #CCC;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+    height: 80px;
+    margin: 0 10px;
+}
+
+.container-fluid img {
+    height: 50px;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #6E8E59;
+    gap: 15px;
+    padding: 5px 0;
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-item a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.navbar-nav .nav-item i{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+
+.navbar-nav .nav-item .active {
+    color: white;
+}
+
+.navbar-nav li a:hover {
+    text-decoration: underline;
+}
+.navbar-nav li i:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.navbar-nav li form:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#show_users {
+    background-color:  #6E8E59;
+
+    width: 180px;
+    position: absolute; 
+    margin-top: 50px;
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-left: 330px;
+  
+}
+#show_users .utente{
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+  
+}
+
+
+#show_users li {
+    list-style: none;
+
+}
+.hidden {
+    display: none;
+}
+
+/*  formulario Registro*/
+.titulo_formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo_formulario h1{
+    padding-top: 20px;
+    color: #6E8E59;
+    font-family: 16px;
+}
+.admin_form {
+   
+    width: 40%;
+    background-color:  #CAE0BC;
+    padding: 3rem 1rem 1rem 1rem;
+    color: white;
+    border-radius: 5px;
+    margin: 20px auto;
+  
+}
+
+.admin_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin_form input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+.admin_form textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.admin_form button {
+    padding: 10px;
+    background-color: #6E8E59;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+    transition: background-color 0.3s;
+}
+
+.admin_form button:hover {
+    background-color: #518730;
+    color: #fff;
+}
+
+/* lista administradores tabela */
+
+.lista_admins h1{
+text-align: center;
+padding-top: 15px;
+
+font-size: 26px;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    font-size: 16px;
+    text-align: left;
+}
+.cabecalho tr{
+    background-color: #6E8E59 !important; 
+    color: white;
+
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table .actions button{
+    border: none;
+    background-color: transparent;
+}
+table .actions i {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 5px;
+    color: #6E8E59;
+}
+.actions .delete:hover {
+    color: red;
+}
+.actions  .edit:hover {
+    color: rgb(34, 107, 11);
+}
+
+
+/* shou cards poupancas */
+.div_lista_kixikila h1{
+   
+        text-align: center;
+        padding-top: 15px;
+        
+        font-size: 26px;
+        
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* padding: -20px; */
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 23%; /* Aproximadamente 1/4 da largura do container */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card .actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+  background-color: transparent;
+}
+
+.card .actions i {
+    cursor: pointer;
+    font-size: 28px;
+    margin: 0 5px;
+    color: #6E8E59;
+}
+
+.card .actions  .delete:hover {
+    color: red;
+}
+.card .actions .edit:hover {
+    color: rgb(34, 107, 11);
+}
+
+
+
+
+
