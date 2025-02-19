@@ -17,7 +17,7 @@ class AdminAuth
       
     }
 
-    return redirect('/login');
+    return redirect('/loginAdmin');
 }
 
 }

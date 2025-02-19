@@ -10,31 +10,31 @@ body {
     min-height: 100vh;
     margin: 0;
     display: flex;
-    flex-direction: column; /
+    flex-direction: column;
 }
 
 main {
     flex: 1; 
 }
-.mensagem_contacto{
+
+.mensagem_contacto {
     font-size: 16px;
     color: #6E8E59;
-    
 }
-.error_message{
+
+.error_message {
     color: rgb(133, 13, 13);
     font-size: 16px;
-
 }
-.nome_admin{
+
+.nome_admin {
     font-size: 16px;
     color: white;
-      
 }
+
 /* Header */
 header {
-    background-color:#6E8E59;
-
+    background-color: #6E8E59;
     border-bottom: 1px solid #CCC;
 }
 
@@ -71,7 +71,8 @@ header {
     color: white;
     text-decoration: none;
 }
-.navbar-nav .nav-item i{
+
+.navbar-nav .nav-item i {
     font-size: 20px;
     color: white;
     padding-top: 10px;
@@ -84,17 +85,19 @@ header {
 .navbar-nav li a:hover {
     text-decoration: underline;
 }
+
 .navbar-nav li i:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
 .navbar-nav li form:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-#show_users {
-    background-color:  #6E8E59;
 
+#show_users {
+    background-color: #6E8E59;
     width: 180px;
     position: absolute; 
     margin-top: 50px;
@@ -103,47 +106,42 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     margin-left: 330px;
-  
-}
-#show_users .utente{
- 
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-
-  
 }
 
+#show_users .utente {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
 
 #show_users li {
     list-style: none;
-
 }
+
 .hidden {
     display: none;
 }
 
-/*  formulario Registro*/
-.titulo_formulario{
+/* Formulário Registro */
+.titulo_formulario {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.titulo_formulario h1{
+
+.titulo_formulario h1 {
     padding-top: 20px;
     color: #6E8E59;
     font-family: 16px;
 }
+
 .admin_form {
-   
     width: 40%;
-    background-color:  #CAE0BC;
+    background-color: #CAE0BC;
     padding: 3rem 1rem 1rem 1rem;
     color: white;
     border-radius: 5px;
     margin: 20px auto;
-  
 }
 
 .admin_form form {
@@ -151,15 +149,8 @@ header {
     flex-direction: column;
 }
 
-.admin_form input{
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-}
-.admin_form textarea{
+.admin_form input,
+.admin_form textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -184,14 +175,13 @@ header {
     color: #fff;
 }
 
-/* lista administradores tabela */
-
-.lista_admins h1{
-text-align: center;
-padding-top: 15px;
-
-font-size: 26px;
+/* Lista Administradores (Tabela) */
+.lista_admins h1 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 26px;
 }
+
 table {
     width: 60%;
     border-collapse: collapse;
@@ -199,42 +189,42 @@ table {
     font-size: 16px;
     text-align: left;
 }
-.cabecalho tr{
+
+.cabecalho tr {
     background-color: #6E8E59 !important; 
     color: white;
-
 }
+
 table th, table td {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-table .actions button{
+table .actions button {
     border: none;
     background-color: transparent;
 }
+
 table .actions i {
     cursor: pointer;
     font-size: 20px;
     margin: 0 5px;
     color: #6E8E59;
 }
+
 .actions .delete:hover {
     color: red;
 }
-.actions  .edit:hover {
+
+.actions .edit:hover {
     color: rgb(34, 107, 11);
 }
 
-
-/* shou cards poupancas */
-.div_lista_kixikila h1{
-   
-        text-align: center;
-        padding-top: 15px;
-        
-        font-size: 26px;
-        
+/* Show Cards de Poupança */
+.div_lista_kixikila h1 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 26px;
 }
 
 .container {
@@ -242,7 +232,6 @@ table .actions i {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    /* padding: -20px; */
 }
 
 .card {
@@ -250,7 +239,7 @@ table .actions i {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 23%; /* Aproximadamente 1/4 da largura do container */
+    width: 23%;
     box-sizing: border-box;
     margin-bottom: 20px;
     position: relative;
@@ -282,7 +271,7 @@ table .actions i {
     font-size: 14px;
     cursor: pointer;
     color: #fff;
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .card .actions i {
@@ -292,14 +281,65 @@ table .actions i {
     color: #6E8E59;
 }
 
-.card .actions  .delete:hover {
+.card .actions .delete:hover {
     color: red;
 }
+
 .card .actions .edit:hover {
     color: rgb(34, 107, 11);
 }
 
+/* Media Queries */
 
+/* Para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    /* Ajustando a barra de navegação para dispositivos menores */
+    .navbar-nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
 
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
 
+    .admin_form {
+        width: 80%;
+        margin: 20px auto;
+    }
 
+    /* Ajustando as tabelas para visualização em telas menores */
+    table {
+        width: 90%;
+    }
+
+    .card {
+        width: 45%; 
+    }
+}
+
+/* Para telas menores que 480px */
+@media screen and (max-width: 480px) {
+    /* Ajustando ainda mais para telas muito pequenas */
+    .navbar-nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .admin_form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%; 
+    }
+
+    .div_lista_kixikila h1 {
+        font-size: 22px;
+    }
+}

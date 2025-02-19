@@ -29,14 +29,14 @@ Route::put('/edit/admin/{id}',[Admin::class,'update']);
 //Routes crear grupos para popança
 Route::get('/poupanca',[Poupancas::class,'showPoupanca']); 
 Route::post('/poupanca',[Poupancas::class,'store']); 
-Route::get('/poupancas',[Poupancas::class,'poupanca']); 
+Route::get('/poupancas',[Poupancas::class,'poupanca'])->middleware(AdminAuth::class); 
 Route::delete('/poupancas/{id}',[Poupancas::class,'destroy']); 
 Route::get('/edit/poupancas/{id}',[Poupancas::class,'showEdit']);  
 Route::put('/edit/poupancas/{id}',[Poupancas::class,'update']);  
 
 // Routes utentes
 
-Route::get('/utente',[User::class,'index'])->middleware('auth'); 
+Route::get('/kixikila',[User::class,'index'])->middleware('auth'); 
 Route::get('/dashboard',[User::class,'dashboard'])->middleware('auth'); 
 Route::post('/poupancas/join/{id}',[User::class,'joinPoupanca'])->middleware('auth'); 
 Route::get('/sobre',[User::class,'sobre']); 

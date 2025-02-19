@@ -8,7 +8,7 @@
  
 <h1>Kixikila</h1>
 <p>Participe de um grupo de poupança coletiva e receba o valor acumulado a cada mês!</p>
-<a href="/utente" class="linkEventos">Faça parte de um grupo!</a>
+<a href="/kixikila" class="linkEventos">Faça parte de um grupo!</a>
 <div class="euros">
      <!-- <i class="fa-solid fa-money-bill-wave euro"></i> -->
   <img src="/img/image.png" class="euro" alt="">

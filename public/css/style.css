@@ -1,4 +1,4 @@
-/* Geral */
+/* General */
 * {
     font-family: "Merriweather";
     margin: 0;
@@ -10,32 +10,17 @@ body {
     min-height: 100vh;
     margin: 0;
     display: flex;
-    flex-direction: column; /
+    flex-direction: column;
 }
 
 main {
-    flex: 1; 
-}
-.mensagem_contacto{
-    font-size: 16px;
-    color: #6E8E59;
-    
-}
-.erros_form_contacto{
-    color: rgb(133, 13, 13);
-    font-size: 16px;
-
+    flex: 1;
 }
 
 /* Header */
 header {
-    background-color:#6E8E59;
-
+    background-color: #6E8E59;
     border-bottom: 1px solid #CCC;
-}
-
-.row {
-    margin: 0;
 }
 
 .container-fluid {
@@ -73,21 +58,12 @@ header {
 .navbar-nav li a:hover {
     text-decoration: underline;
 }
+
 .navbar-nav li form:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.users_bemvindo{
-    margin-right: 20px;
-    margin-top: 2px;
-    font-size: 20px;
-    color: rgb(53, 235, 59);
-  
-}
-.users_bemvindo span{
-    font-size: 20px;
-    color: white;
-}
+
 /* Banner */
 .bannerPrincipal {
     position: relative;
@@ -108,8 +84,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.2); */
-    background-color: rgb(202, 224, 188,0.2);
+    background-color: rgba(202, 224, 188, 0.2);
     z-index: 1;
 }
 
@@ -137,7 +112,7 @@ p {
     margin: 10px 0;
     line-height: 2.5rem;
     text-align: start;
-    color :#6E8E59;
+    color: #6E8E59;
 }
 
 .linkEventos {
@@ -153,23 +128,20 @@ p {
 .linkEventos:hover {
     background-color: #518730;
     color: #fff;
-   
 }
+
 .euros {
     position: absolute;
     margin-left: 600px;
     width: 500px;
-   
 }
+
 .euro {
     position: absolute;
-  
     animation: moveToPiggy 3s linear infinite;
-        width: 150px !important; 
-        height: 320px !important; 
-        object-fit: contain !important;
-    
-    
+    width: 150px !important;
+    height: 320px !important;
+    object-fit: contain !important;
 }
 
 @keyframes moveToPiggy {
@@ -187,31 +159,48 @@ p {
     }
 }
 
-.euro:nth-child(1) { left: 70%; animation-delay: 0s; }
-.euro:nth-child(2) { left: 70%; animation-delay: 1s; }
-.euro:nth-child(3) { left: 70%; animation-delay: 2s; }
-.euro:nth-child(4) { left: 70%; animation-delay: 3; }
-.euro:nth-child(5) { left: 70%; animation-delay: 4s; }
+.euro:nth-child(1) {
+    left: 70%;
+    animation-delay: 0s;
+}
+
+.euro:nth-child(2) {
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.euro:nth-child(3) {
+    left: 70%;
+    animation-delay: 2s;
+}
+
+.euro:nth-child(4) {
+    left: 70%;
+    animation-delay: 3;
+}
+
+.euro:nth-child(5) {
+    left: 70%;
+    animation-delay: 4s;
+}
+
 /* Contacto */
 .contacto {
-    
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff; 
-    border-radius: 8px; 
+    background-color: #fff;
+    border-radius: 8px;
     margin-top: 3rem;
 }
 
-/* Seção de informações de contato */
 .contacto_info {
     position: relative;
     width: 40%;
     background-color: #6E8E59;
-
     padding: 1rem;
     height: 45vh;
     color: white;
@@ -223,14 +212,14 @@ p {
 .contacto_info h1 {
     font-size: 35px;
     margin-bottom: 10px;
-    color:  #fff;
+    color: #fff;
 }
 
 .contacto_info p {
     font-size: 17px;
     margin: 10px 0;
     line-height: 1.5;
-    color:  #fff;
+    color: #fff;
 }
 
 .div_info_contacto {
@@ -239,16 +228,14 @@ p {
     gap: 7px;
 }
 
-
-/* Seção para preencher o formulario */
+/* Form */
 .contacto_form {
     width: 40%;
-    background-color:  #CAE0BC;
+    background-color: #CAE0BC;
     padding: 3rem 1rem 1rem 1rem;
     color: white;
     border-radius: 5px;
     margin-right: 180px;
-  
 }
 
 .contacto_form form {
@@ -286,13 +273,12 @@ p {
     background-color: #518730;
     color: #fff;
 }
-/* animacao contaco */
+
 .money-animation {
     position: relative;
     width: 200px;
     height: 200px;
     margin: 50px auto;
-
 }
 
 .center-icon {
@@ -305,7 +291,7 @@ p {
     z-index: 2;
 }
 
-.notes{
+.notes {
     margin-left: 90px;
     margin-top: -90px;
 }
@@ -314,87 +300,86 @@ p {
     position: absolute;
     font-size: 30px;
     color: green;
-    transform-origin: 50% 130px; /* Define o ponto de rotação */
-    animation: rotate 4s linear infinite; /* Animação infinita */
-
-
-
+    transform-origin: 50% 130px;
+    animation: rotate 4s linear infinite;
 }
 
-
 @keyframes rotate {
-    
-
     0% {
         transform: rotate(calc(45deg * var(--i)));
     }
+
     100% {
         transform: rotate(calc(45deg * var(--i) + 360deg));
     }
 }
 
-
-/* shou cards poupancas */
-.div_lista_kixikila h1{
-   
+/* Cards de poupanças */
+.div_lista_kixikila h1 {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 30px;
     font-size: 26px;
-    
 }
 
 .container {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 20px;
-/* padding: -20px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
 }
 
 .card {
-background: #fff;
-padding: 20px;
-border-radius: 8px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-width: 23%; /* Aproximadamente 1/4 da largura do container */
-box-sizing: border-box;
-margin-bottom: 20px;
-position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 23%; 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
 }
-.card .div_on_off{
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .div_on_off {
     display: flex;
     justify-content: space-between;
 }
 
 .card p {
-margin: 0 0 10px;
-font-size: 16px;
-color: #555;
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #555;
 }
 
 .card img {
-max-width: 100%;
-height: auto;
-border-radius: 5px;
-margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .card .actions {
-margin-top: 15px;
-display: flex;
-justify-content: space-between;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card .actions button {
-padding: 8px 12px;
-border: none;
-border-radius: 5px;
-font-size: 14px;
-cursor: pointer;
-color: #fff;
-background-color: transparent;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
 }
+
 .card .actions form {
     display: flex;
     justify-content: center;
@@ -404,24 +389,112 @@ background-color: transparent;
     font-size: 18px;
     background-color: #6E8E59;
     height: 5vh;
-
 }
-.card .actions form a{
+
+.card .actions form a {
     text-decoration: none;
     color: white;
-   
 }
+
 .card .actions form:hover {
     background-color: #518730;
     color: #fff;
 }
 
-.card .actions .participar{
-background-color: #518730;
+.card .actions .participar {
+    background-color: #518730;
     color: #fff;
     width: 100%;
     text-align: center;
 }
+
+/* Media Queries */
+
+/* Para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .bannerPrincipal img {
+        display: none; /* Esconde a imagem */
+    }
+
+    .textoBanner {
+        width: 80%;
+        left: 10%;
+        top: 40%;
+    }
+
+    .euro {
+        width: 120px !important;
+        height: 250px !important;
+    }
+
+    .contacto {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .contacto_info,
+    .contacto_form {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    /* Cards ajustando o layout para telas pequenas */
+    .card {
+        width: 45%; 
+    }
+}
+
+/* Para telas menores que 480px */
+@media screen and (max-width: 480px) {
+    .bannerPrincipal img {
+        display: none; 
+    }
+
+    .textoBanner h1 {
+        font-size: 30px;
+    }
+
+    .textoBanner p {
+        font-size: 18px;
+    }
+
+    .contacto_info h1 {
+        font-size: 30px;
+    }
+
+    .contacto_info p {
+        font-size: 15px;
+    }
+
+    .contacto_form button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    /* Cards ajustando o layout para telas pequenas */
+    .card {
+        width: 100%; 
+    }
+
+    .div_lista_kixikila h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -432,10 +505,12 @@ footer {
     width: 100%;
     justify-content: space-between;
 }
-footer img{
+
+footer img {
     height: 40px;
 }
-footer div{
+
+footer div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,13 +518,13 @@ footer div{
     font-size: 25px;
 }
 
-footer div i:hover{
- font-size: 35px;
+footer div i:hover {
+    font-size: 35px;
     cursor: pointer;
 }
+
 footer p {
     margin-bottom: 0;
-    color:  #fff;
+    color: #fff;
     font-size: 19px;
 }
-

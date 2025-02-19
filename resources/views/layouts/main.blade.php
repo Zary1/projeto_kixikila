@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/utente">Poupança</a>
+          <a class="nav-link active" aria-current="page" href="/kixikila">Poupança</a>
         </li>
         <li class="nav-item" id="sobre">
           <a class="nav-link " aria-current="page" href="/sobre">Sobre nós</a>
