@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 body {
@@ -11,12 +12,21 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 main {
     flex: 1;
 }
-
+.users_bemvindo{
+    color: green;
+    font-size: 20px;
+    padding-right: 40px;
+}
+.users_bemvindo span{
+    color: white;
+    font-size: 20px;
+}
 /* Header */
 header {
     background-color: #6E8E59;
@@ -43,6 +53,10 @@ header {
     justify-content: center;
     background-color: #6E8E59;
     padding: 5px 0;
+    z-index: 1;
+}
+.navbar-nav .nav-item{
+    padding: 0px 10px;
 }
 
 .navbar-nav .nav-item a {
@@ -99,6 +113,14 @@ header {
     border-radius: 10px;
     z-index: 2;
 }
+.bannerPrincipal .info_banner .div_facaParte{
+
+    margin-top: 30px;
+  }
+  .bannerSobre .info_banner .div_facaParte{
+
+    margin-top: 30px;
+  }
 
 h1 {
     font-size: 45px;
@@ -183,7 +205,129 @@ p {
     left: 70%;
     animation-delay: 4s;
 }
+/* pagina sobre */
+.bannerSobre{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
 
+
+.bannerSobre img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.bannerSobre::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(202, 224, 188, 0.2);
+    z-index: 1;
+}
+
+.bannerSobre .textoBanner {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #fff;
+    width: 30%;
+    border-radius: 10px;
+    z-index: 2;
+}
+.bannerSobre .textoBanner p{
+    font-size: 20px;
+    text-align:justify
+}
+.bannerSobre h1 {
+    font-size: 45px;
+    margin: 0;
+    text-align: start;
+    color: #6E8E59;
+}
+
+p {
+    font-size: 22px;
+    margin: 10px 0;
+    line-height: 2.5rem;
+    text-align: start;
+    color: #6E8E59;
+}
+
+.linkEventos {
+    background-color: #6E8E59;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.linkEventos:hover {
+    background-color: #518730;
+    color: #fff;
+}
+
+.euros {
+    position: absolute;
+    margin-left: 600px;
+    width: 500px;
+}
+
+.euro {
+    position: absolute;
+    animation: moveToPiggy 3s linear infinite;
+    width: 150px !important;
+    height: 320px !important;
+    object-fit: contain !important;
+}
+
+@keyframes moveToPiggy {
+    0% {
+        transform: translateX(250px) scale(1);
+        opacity: 1;
+    }
+    90% {
+        transform: translateY(-10px) scale(0.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-10px) scale(0);
+        opacity: 0;
+    }
+}
+
+.euro:nth-child(1) {
+    left: 70%;
+    animation-delay: 0s;
+}
+
+.euro:nth-child(2) {
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.euro:nth-child(3) {
+    left: 70%;
+    animation-delay: 2s;
+}
+
+.euro:nth-child(4) {
+    left: 70%;
+    animation-delay: 3;
+}
+
+.euro:nth-child(5) {
+    left: 70%;
+    animation-delay: 4s;
+}
 /* Contacto */
 .contacto {
     width: 100%;
@@ -413,7 +557,43 @@ p {
 /* Para telas menores que 768px */
 @media screen and (max-width: 768px) {
     .bannerPrincipal img {
-        display: none; /* Esconde a imagem */
+        display: none; 
+    }
+    .bannerPrincipal .info_banner{
+        margin-top: -190px;
+        gap: 10px;
+    }
+  .bannerPrincipal .info_banner .div_facaParte{
+
+    margin-top: 30px;
+  }
+  .bannerSobre .info_banner{
+    margin-top: -120px;
+    gap: 10px;
+}
+
+.bannerSobre .info_banner .div_facaParte{
+
+    margin-top: 30px;
+  }
+    .bannerSobre  img {
+        display: none; 
+    }
+    .bannerSobre  {
+     height: 700px;
+    }
+   
+  
+    .bannerSobre  .textoBanner {
+        width: 80%;
+    }
+    .bannerSobre .textoBanner h1{
+        font-size: 40px;
+       
+    }
+    .bannerSobre .textoBanner p{
+        font-size: 17px;
+        text-align: justify;
     }
 
     .textoBanner {
@@ -422,6 +602,7 @@ p {
         top: 40%;
        
     }
+    
 
     .euro {
         width: 120px !important;
@@ -453,24 +634,100 @@ p {
     .card {
         width: 45%; 
     }
+    footer {
+        display: flex;
+        text-align: center;
+        background-color: #6E8E59;
+        color: white;
+        padding: 30px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    footer img {
+        height: 40px;
+    }
+    footer div i{
+        font-size: 20px;
+    }
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top:-10px ;
+      
+      
+    }
+    
+    footer div i:hover {
+        font-size: 4px;
+        cursor: pointer;
+    }
+    
+    footer  p {
+        margin-bottom: 0;
+      color: white;
+        font-size: 10px;
+      
+    }
+    
+    
 }
+
 
 /* Para telas menores que 480px */
 @media screen and (max-width: 480px) {
     .bannerPrincipal img {
         display: none; 
     }
-    .textoBanner{
-margin-top: 100px;
+    .bannerPrincipal .info_banner{
+        margin-top: -190px;
+        gap: 10px;
+    }
+  .bannerPrincipal .info_banner .div_facaParte{
+
+    margin-top: 30px;
+  }
+  .bannerSobre .info_banner{
+    margin-top: -120px;
+    gap: 10px;
+}
+
+.bannerSobre .info_banner .div_facaParte{
+
+    margin-top: 30px;
+  }
+  .bannerSobre img {
+    display: none; 
+}
+    .bannerSobre  .textoBanner {
+        width: 80%;
+    }
+    .bannerSobre .textoBanner h1{
+        font-size: 40px;
+       
+    }
+    .bannerSobre .textoBanner p{
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    .bannerPrincipal img {
+     display: none;
+    }
+    .bannerPrincipal {
+        margin-top: -140px;
     }
 
     .textoBanner h1 {
         font-size: 30px;
-        color: red;
+      
     }
 
     .textoBanner p {
         font-size: 18px;
+        
     }
 
     .contacto_info h1 {
@@ -498,8 +755,45 @@ margin-top: 100px;
     .container {
         padding: 0;
     }
-}
 
+    footer {
+        display: flex;
+        text-align: center;
+        background-color: #6E8E59;
+        color: white;
+        padding: 30px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    footer img {
+        height: 40px;
+    }
+    footer div i{
+        font-size: 20px;
+    }
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top:-10px ;
+      
+      
+    }
+    
+    footer div i:hover {
+        font-size: 4px;
+        cursor: pointer;
+    }
+    
+    footer  p {
+        margin-bottom: 0;
+      color: white;
+        font-size: 10px;
+      
+    }
+}
 /* Footer */
 footer {
     display: flex;

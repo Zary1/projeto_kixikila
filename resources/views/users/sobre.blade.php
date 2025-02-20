@@ -1,17 +1,23 @@
 @extends('layouts.main')
 @section('title','Kixikila')
 @section('content')
-<div class="bannerPrincipal">
+<div class="bannerSobre">
 
 <img src="/img/banner.png" alt="">
     <div class="textoBanner">
- 
-<h1>Sobre nós</h1>
-<p style="font-size: 20px;text-align:justify">Somos um grupo dedicado a tornar a poupança mais leve, prática e organizada.
+ <div class="info_banner">
+ <h1>Sobre nós</h1>
+<p >Somos um grupo dedicado a tornar a poupança mais leve, prática e organizada.
     A kixikila funciona da seguinte forma:um grupo de 3
      ou mais participantes se reúne para criar uma poupança compartilhada. Cada integrante contribui com um valor fixo mensal – por exemplo, 1000€. Ao final de cada mês, um dos participantes recebe o montante total do grupo (neste caso, 3000€). 
-    Este processo continua até que todos tenham recebido a sua parte.</p>
-<a href="/utente" class="linkEventos">Faça parte de um grupo!</a>
+    Este processo continua até que todos tenham recebido a 
+    sua parte.</p>
+    <div class="div_facaParte">
+    <a href="/utente" class="linkEventos">Faça parte de um grupo!</a>
+    </div>
+
+ </div>
+
 <div class="euros">
      <!-- <i class="fa-solid fa-money-bill-wave euro"></i> -->
   <img src="/img/image.png" class="euro" alt="">

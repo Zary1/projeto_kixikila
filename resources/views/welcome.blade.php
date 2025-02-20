@@ -5,10 +5,14 @@
 
 <img src="/img/banner.png" alt="">
     <div class="textoBanner">
- 
-<h1>Kixikila</h1>
+ <div class="info_banner">
+ <h1>Kixikila</h1>
 <p>Participe de um grupo de poupança coletiva e receba o valor acumulado a cada mês!</p>
+<div class="div_facaParte">
 <a href="/kixikila" class="linkEventos">Faça parte de um grupo!</a>
+</div>
+ </div>
+
 <div class="euros">
      <!-- <i class="fa-solid fa-money-bill-wave euro"></i> -->
   <img src="/img/image.png" class="euro" alt="">
