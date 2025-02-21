@@ -16,7 +16,7 @@
            <!-- Fonts -->
            <link rel="preconnect" href="https://fonts.bunny.net">
         
-        <link rel="stylesheet" href="/css/ana.css">
+        <link rel="stylesheet" href="/css/style.css">
     <body>
     <header>
     <nav class="navbar navbar-expand-lg ">
